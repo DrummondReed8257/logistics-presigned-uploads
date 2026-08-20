@@ -1,0 +1,1 @@
+"""Shipment asset upload service."""

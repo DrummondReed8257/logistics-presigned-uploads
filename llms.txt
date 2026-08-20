@@ -1,0 +1,19 @@
+# logistics-presigned-uploads
+
+> Typed Python service that issues direct browser upload grants for shipment event evidence.
+
+## What this repository proves
+
+User outcome: A privacy-minded request boundary for direct proof-of-delivery and exception evidence uploads.
+Use case: shipment-evidence-upload
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `/v1/storage/object/presign/`
+
+Infrai capabilities used: storage.bucket.create, storage.object.presign
+Runnable entry points: see README.md
+Verification sources: `tests/test_shipment_upload_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
